@@ -1,53 +1,74 @@
-# Blog Corso Web
+# 📝 Blog Corso Web
 
-## Requisiti
+Questo progetto è stato sviluppato come parte del corso web presso [La Scuola Open Source](https://www.lascuolaopensource.xyz) e [Cascina Cotica](https://www.cascinacotica.com/).
 
-> [!IMPORTANT]
-> Per utilizzare questo progetto è necessario avere installato [Node.js](https://nodejs.org/en/download/), [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) e [Git](https://git-scm.com/downloads).
+## ✨ Caratteristiche
 
-Node 20.x è sufficiente per eseguire il progetto.
+- 🚀 Performance ottimizzate grazie a SvelteKit
+- 🎨 Design moderno con Tailwind CSS
+- 📱 Completamente responsive
+- 💪 TypeScript per un codice più robusto
 
-## Tecnologie Usate
+## 🛠️ Tecnologie
 
-- Svelte 5 (Framework)
-- SvelteKit (Meta Framework)
-- Tailwind CSS (Stile)
-- TypeScript (Linguaggio)
+- **[Svelte 5](https://svelte.dev/)** - Framework reattivo per UI moderne
+- **[SvelteKit](https://kit.svelte.dev/)** - Meta-framework per applicazioni web complete
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript con tipizzazione statica
 
-## Installazione
+## 📋 Prerequisiti
 
-Per scaricare il progetto è sufficiente aprire il terminale e navigare in una cartella desiderata. Quindi esegui questo comando:
+Prima di iniziare, assicurati di avere installato:
+
+- [Node.js](https://nodejs.org/en/download/) (v20.x o superiore)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) o [pnpm](https://pnpm.io/)
+- [Git](https://git-scm.com/downloads)
+
+## 🚀 Per iniziare
+
+1. **Clona il repository**
 
 ```bash
 git clone https://github.com/lascuolaopensource/blog-corso-web.git
+cd blog-corso-web
 ```
 
-> [!TIP]
-> è possibile scaricare il tutto direttamente dal [sito GitHub](https://github.com/lascuolaopensource/blog-corso-web) tramite il pulsante verde "Code". Esplora le opzioni di download per scaricare il progetto in diverse modalità (zip, GitHub Desktop, ecc.).
-
-Una volta clonato il progetto sul tuo computer sarà necessario muoversi nella cartella appena scaricata e installare le dipendenze con il seguente comando:
+2. **Installa le dipendenze**
 
 ```bash
 npm install
+# oppure
+pnpm install
 ```
 
-## Avvio
-
-Per avviare il progetto è sufficiente eseguire il comando:
+3. **Avvia il server di sviluppo**
 
 ```bash
 npm run dev
+# oppure
+pnpm dev
 ```
 
-Potrai vedere il sito all'indirizzo [http://localhost:5173](http://localhost:5173).
+Ora puoi visitare [http://localhost:5173](http://localhost:5173) per vedere l'applicazione in azione! 🎉
 
-## Struttura del progetto
+## 📁 Struttura del Progetto
 
-Il progetto è strutturato in vari file e cartelle:
+```
+blog-corso-web/
+├── src/                    # Codice sorgente
+│   ├── routes/            # Pagine dell'applicazione
+│   ├── lib/               # Librerie e utilities
+│   │   ├── components/    # Componenti riutilizzabili
+│   │   └── types/        # Definizioni TypeScript
+│   └── app.html          # Template HTML principale
+├── static/                # File statici (immagini, fonts, etc.)
+└── package.json          # Dipendenze e script
+```
 
-- `src`: contiene il codice sorgente dell'applicazione.
-- `static`: contiene le risorse statiche dell'applicazione.
-- `src/routes`: contiene le pagine dell'applicazione.
-- `src/lib`: contiene vari file di utilità e di funzionalità utili all'applicazione.
-- `src/lib/types`: contiene tutti i `tipi` utili all'applicazione.
-- `src/lib/components`: contiene i componenti riusabili in ogni pagina dell'applicazione.
+## 🔧 Script Disponibili
+
+- `npm run dev` - Avvia il server di sviluppo
+
+---
+
+Realizzato con ❤️ durante il corso di svilupppo web presso [La Scuola Open Source](https://www.lascuolaopensource.xyz) e [Cascina Cotica](https://www.cascinacotica.com/)
