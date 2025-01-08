@@ -1,5 +1,5 @@
 <!-- Titolo principale della pagina con stile tailwind per dimensione e peso del font -->
-<h1 class="text-2xl font-semibold">Ciao!</h1>
+<h1 class="text-2xl font-semibold">Ciao, come stai?</h1>
 
 <!-- Semplice paragrafo di benvenuto -->
 <p>Questa è la pagina principale.</p>
