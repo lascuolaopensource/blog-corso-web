@@ -14,3 +14,5 @@
 	Visita la pagina <a href="/posts" class="text-blue-500 hover:text-blue-700">Posts</a> per vedere i
 	post.
 </p>
+
+<p>Qui verranno visualizzati i post!</p>
