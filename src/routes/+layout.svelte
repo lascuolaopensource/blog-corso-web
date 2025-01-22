@@ -22,8 +22,7 @@
 </script>
 
 <!-- Container principale con padding -->
-<div class="px-4 py-2">
-
+<div class="m-4 border-8 border-double border-black px-4 py-2">
 	<Navbar />
 
 	<div class="py-4">
