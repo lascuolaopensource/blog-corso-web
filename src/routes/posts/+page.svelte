@@ -11,22 +11,14 @@
 	// - onMount per eseguire codice quando la pagina viene caricata
 	// - PostsType per definire il tipo dei nostri dati
 	// - Il componente Post che useremo per mostrare ogni singolo post
-	import { onMount } from 'svelte';
-	import type { PostsType } from '$lib/types';
 	import Post from '$lib/components/Post.svelte';
 
-	// Creiamo una variabile per contenere i post
-	// Inizialmente è undefined perché i dati non sono ancora stati caricati
-	let postsObject: PostsType | undefined = undefined;
+	// Riceviamo i dati dal server `+page.server.ts`.
+	// IMPORTANTE: usare `{data}` quando si ricevono dati da una `load` function.
+	let { data } = $props();
 
-	// Quando la pagina viene caricata (onMount):
-	// 1. Facciamo una richiesta all'API per ottenere i post
-	// 2. Convertiamo la risposta in JSON
-	// 3. Salviamo i dati nella nostra variabile postsObject
-	onMount(async () => {
-		const response = await fetch('https://dummyjson.com/posts');
-		postsObject = await response.json();
-	});
+	// Riempiamo la variabile `posts` con i dati ricevuti dal server
+	const posts = data.posts;
 </script>
 
 <!-- Titolo della pagina con stile Tailwind per dimensione e peso del font -->
@@ -37,8 +29,8 @@
   Mostriamo i post solo se sono stati caricati (postsObject?.posts esiste)
 -->
 <div class="grid grid-cols-4 gap-4">
-	{#if postsObject?.posts}
-		{#each postsObject.posts as post}
+	{#if posts}
+		{#each posts as post}
 			<!-- Per ogni post, usiamo il componente Post passandogli i dati del post -->
 			<Post {post} />
 		{/each}
